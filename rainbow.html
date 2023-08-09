@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        text-align: center;
+        justify-content:center;
+        margin-top: 400px;
+    }
+</style>
+<body>
+    <button>Click Me❤️ to change my style</button>
+</body>
+<script>
+    const button=document.querySelector("button");
+    const body=document.querySelector("body");
+    const color=['violet','indigo','blue','green','black','yellow','orange','pink'];
+    body.style.backgroundColor='pink';
+    document.addEventListener('click',function(){
+           const colorIndex=parseInt(Math.random()*color.length);
+           body.style.backgroundColor=color[colorIndex];
+
+
+           
+   
+    button.style.color = "white";
+    button.style.background = "radial-gradient(white,green)";
+    button.style.width = "100px";
+button.style.height = "100px"; 
+button.style.fontSize = "10px"; 
+button.style.fontStyle = "bold"; 
+   
+
+    });
+
+
+
+
+</script>
+</html>
